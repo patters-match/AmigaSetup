@@ -9,6 +9,8 @@ With your system's original Kickstart ROM that can boot the PCMCIA floppy...
 - Boot the PCMCIA floppy
 - Open the transfer SD/CF card and right-click -> Window -> Show -> All Files
 - Use ADFBlitzer to write Install3.2.adf to a floppy. Make two copies in case you get something wrong during this process, which will avoid you having to swap Kickstart ROMs once again.
+- On your modern computer, extract the entire AmigaOS3.2 ISO to your transfer SD/CF card
+- Register an account at [Hyperion Entertainment](https://www.hyperion-entertainment.com/) using your CD key, and download the 3.2.3 update. The prior updates are not needed. Extract and copy to the transfer SD/CF card.
 
 ## Add PCMCIA storage support
 - Power off and physically install the new Kickstart 3.2.3 ROM
@@ -22,12 +24,10 @@ With your system's original Kickstart ROM that can boot the PCMCIA floppy...
 - Reboot from the Install3.2 floppy, with the PCMCIA transfer SD/CF card inserted. If you have an A1200, do a cold boot here to guarantee your PCMCIA card initialises.
 - Double-click on `Storage/DOSDrivers/CF0` to mount the transfer PCMCIA SD/CF card (it will not auto mount because `S:Startup-sequence` does not instruct this)
 - Now you have a bridge to get files to your Amiga using KickStart 3.2.3
-- On your modern computer, extract the entire AmigaOS3.2 ISO to your transfer SD/CF card
-- Register an account at [Hyperion Entertainment](https://www.hyperion-entertainment.com/) using your CD key, and download the 3.2.3 update. The prior updates are not needed. Extract and copy to the transfer SD/CF card.
 
 ## Hard disk (internal CF card) setup:
-- N.B. I tested using PFS3 for both boot and data partitions and found PFS3 to be slower at opening drawers full of icons (Prefs) than FFS with directory cache. On a 68000 we need all the marginal gains.
-- Open `HDTools/HDToolBox`. The internal CF card will be detected, but will present as 'Unknown'
+N.B. I tested using PFS3 for both boot and data partitions and found PFS3 to be slower at opening drawers full of icons (Prefs) than FFS with directory cache. On a 68000 we need all the marginal gains.
+- From the Install3.2 floppy, open `HDTools/HDToolBox`. The internal CF card will be detected, but will present as 'Unknown'
 - Change drive type -> Define new -> Read configuration -> Continue
 - Save changes to the drive and reboot
 - Use HDToolBox to create a 512MB bootable Standard File System partition with device name DH0 with Fast File System, Directory Cache, MaxTransfer of `0x1FE00` and Mask `0xFFFFFFFC`, Blocksize of 512. Be very sure to always hit Enter after each change to ensure it is recorded by the UI.
