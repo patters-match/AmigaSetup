@@ -26,7 +26,7 @@ With your system's original Kickstart ROM that can boot the PCMCIA floppy...
 - Now you have a bridge to get files to your Amiga using KickStart 3.2.3
 
 ## Hard disk (internal CF card) setup:
-N.B. I tested using PFS3 for both boot and data partitions and found PFS3 to be slower at opening drawers full of icons (Prefs) than FFS with directory cache. On a 68000 we need all the marginal gains.
+N.B. I tested using [PFS3 filesystem](https://en.wikipedia.org/wiki/Professional_File_System) for both boot and data partitions and found PFS3 to be slower at opening drawers full of icons (Prefs) than FFS with directory cache. On a 68000 we need all the marginal gains.
 - From the Install3.2 floppy, open `HDTools/HDToolBox`. The internal CF card will be detected, but will present as 'Unknown'
 - Change drive type -> Define new -> Read configuration -> Continue
 - Save changes to the drive and reboot
@@ -46,7 +46,7 @@ N.B. I tested using PFS3 for both boot and data partitions and found PFS3 to be 
 - Reboot
 - From the CF card, run the AmigaOS 3.2.3 Update by double-clicking to mount the file `ADFs/Update3.2.3.adf`
 - Once that floppy image is mounted, launch the installer from the Install folder, ensuring to select the Expert User option. It seems to fail during a scripted file copy when Novice User is selected. Once again select both English British, and English as installed languages.
-- Use HDToolbox to add a new partition type. Browse to the unpacked pfs3aio filesystem driver file, which will copy it to the drive [RDB](https://en.wikipedia.org/wiki/Amiga_rigid_disk_block). Set the DOSType to `0x50465303`. Version is 19.2 which is derived from the driver file.
+- Use HDToolbox to add a new partition type. Browse to the unpacked [pfs3aio filesystem driver](https://aminet.net/package/disk/misc/pfs3aio) file, which will copy it to the drive [RDB](https://en.wikipedia.org/wiki/Amiga_rigid_disk_block). Set the DOSType to `0x50465303`. Version is 19.2 which is derived from the driver file.
 - Create a new partition of type `PFS\03` to span the rest of the drive with device name DH1 with MaxTransfer of `0x1FE00`, and Mask `0xFFFFFFFC`, Blocksize of 512.
 - Quick format this volume
 - Copy [NoClick](https://aminet.net/package/util/cdity/noclick20_usr) to WBStartup
