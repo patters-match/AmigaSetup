@@ -1,6 +1,4 @@
-# AmigaOS 3.2 Install from CF card
-
-AmigaOS 3.2 install on hardware
+# AmigaOS 3.2.3 Install from CF card on hardware
 
 This guide assumes you have purchased a CF/SD card PCMCIA kit which includes a bootable Workbench floppy with PCMCIA support.
 
