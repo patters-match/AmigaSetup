@@ -3,13 +3,15 @@ This guide sets up an Amiga A600 with a bootable internal CF card from scratch. 
 
 This method only requires a working floppy drive, and assumes you have purchased a CF/SD card PCMCIA kit which includes a bootable Workbench floppy with PCMCIA support. Various eBay sellers offer these kits. No WinUAE emulator, and no CD-ROM drive required.
 
-### With your system's original Kickstart ROM that can boot the PCMCIA floppy
+## Make Install3.2 floppy
+With your system's original Kickstart ROM that can boot the PCMCIA floppy...
 - Put [ADFBlitzer](https://aminet.net/package/disk/misc/adfblitzer) onto your PCMCIA transfer SD/CF card, along with Install3.2.adf from the Amiga OS 3.2 CDROM.
 - Boot the PCMCIA floppy
 - Open the transfer SD/CF card and right-click -> Window -> Show -> All Files
 - Use ADFBlitzer to write Install3.2.adf to a floppy. Make two copies in case you get something wrong during this process, which will avoid you having to swap Kickstart ROMs once again.
 
-### Power off and physically install the new Kickstart 3.2.3 ROM
+## Add PCMCIA storage support
+- Power off and physically install the new Kickstart 3.2.3 ROM
 - Boot the Install3.2 floppy
 - Open this disk and right-click -> Window -> Show -> All Files
 - Now delete `ActivateCDROM`, `L/CDFileSystem`, and `Storage/DOSDrivers/CD0`
@@ -23,7 +25,7 @@ This method only requires a working floppy drive, and assumes you have purchased
 - On your modern computer, extract the entire AmigaOS3.2 ISO to your transfer SD/CF card
 - Register an account at [Hyperion Entertainment](https://www.hyperion-entertainment.com/) using your CD key, and download the 3.2.3 update. The prior updates are not needed. Extract and copy to the transfer SD/CF card.
 
-### Hard disk (internal CF card) setup:
+## Hard disk (internal CF card) setup:
 - N.B. I tested using PFS3 for both boot and data partitions and found PFS3 to be slower at opening drawers full of icons (Prefs) than FFS with directory cache. On a 68000 we need all the marginal gains.
 - Open `HDTools/HDToolBox`. The internal CF card will be detected, but will present as 'Unknown'
 - Change drive type -> Define new -> Read configuration -> Continue
