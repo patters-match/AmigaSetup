@@ -37,7 +37,7 @@ This guide assumes you have purchased a CF/SD card PCMCIA kit which includes a b
 - Once AmigaOS 3.2 is installed, boot from DH0:
 - Add PCMCIA CompactFlash support to the installed Workbench, using the files from the install3.2 floppy:
     - Copy `DF0:Storage/DOSDrivers/CF0` to `DHO:Devs/DOSDrivers/`
-    - Copy `DF0:Devs/compactflash.device` to DHO:Devs/`
+    - Copy `DF0:Devs/compactflash.device` to `DHO:Devs/`
     - Copy `DF0:L/fat95` to `DH0:L/`
 - If necessary, run [a608mcfg](http://wiki.archi-tech.com.pl/pl/A608mini) to switch from 8MB Fast RAM to 4MB, to enable PCMCIA
 - Reboot
