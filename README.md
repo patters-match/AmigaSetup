@@ -43,8 +43,8 @@ This guide assumes you have purchased a CF/SD card PCMCIA kit which includes a b
 - Reboot
 - From the CF card, run the AmigaOS 3.2.3 Update by double-clicking to mount the file `ADFs/Update3.2.3.adf`
 - Once that floppy image is mounted, launch the installer from the Install folder, ensuring to select the Expert User option. It seems to fail during a scripted file copy when Novice User is selected. Once again select both English British, and English as installed languages.
-- Use HDToolbox to add a new partition type. Browse to the unpacked pfs3aio filesystem driver file, which will copy it to the drive RDB. Set the DOSType to 0x50465303. Version is 19.2 which is derived from the driver file.
-- Create a new partition of type 'PFS\03' to span the rest of the drive with device name DH1 with MaxTransfer of 0x1FE00, and Mask 0xFFFFFFFC, Blocksize of 512.
+- Use HDToolbox to add a new partition type. Browse to the unpacked pfs3aio filesystem driver file, which will copy it to the drive RDB. Set the DOSType to `0x50465303`. Version is 19.2 which is derived from the driver file.
+- Create a new partition of type `PFS\03` to span the rest of the drive with device name DH1 with MaxTransfer of `0x1FE00`, and Mask `0xFFFFFFFC`, Blocksize of 512.
 - Quick format this volume
 - Copy [NoClick](https://aminet.net/package/util/cdity/noclick20_usr) to WBStartup
 - Install WHDLoad to `C:`
