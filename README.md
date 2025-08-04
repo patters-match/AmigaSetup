@@ -30,8 +30,7 @@ This guide assumes you have purchased a CF/SD card PCMCIA kit which includes a b
 - Use HDToolBox to create a 512MB bootable Standard File System partition with device name DH0 with Fast File System, Directory Cache, MaxTransfer of 0x1FE00 and Mask 0xFFFFFFFC, Blocksize of 512. Be very sure to always hit Enter after each change to ensure it is recorded by the UI.
 - Quick format the new volume in Workbench
 - Open Shell
-- The installer expects a specific volume name which is not a valid FAT volume name, so we must make an assign (replace the second argument with the path to your installation files): 
-
+- The installer expects a specific volume name which is not a valid FAT volume name, so we must make an assign (replace the second argument with the path to your installation files):   
   `assign AmigaOS3.2CD: CF_CARD:AmigaOS3.2CD`
 - Open `Install/Start Here`
 - Open your choice of installer from the Install drawer on the Install3.2 floppy. Select both English British and English languages, so there is a fallback if the British localisation is incomplete. Decline GlowIcons as they are far too slow on 68000.
