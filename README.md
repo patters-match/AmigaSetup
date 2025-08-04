@@ -32,7 +32,7 @@ This guide assumes you have purchased a CF/SD card PCMCIA kit which includes a b
 - Open Shell
 - The installer expects a specific volume name which is not a valid FAT volume name, so we must make an assign (replace the second argument with the path to your installation files):   
   `assign AmigaOS3.2CD: CF_CARD:AmigaOS3.2CD`
-- Open `Install/Start Here`
+- Open `AmigaOS3.2CD:Install/Start Here`
 - Open your choice of installer from the Install drawer on the Install3.2 floppy. Select both English British and English languages, so there is a fallback if the British localisation is incomplete. Decline GlowIcons as they are far too slow on 68000.
 - Once AmigaOS 3.2 is installed, boot from DH0:
 - Add PCMCIA CompactFlash support to the installed Workbench, using the files from the install3.2 floppy:
