@@ -50,7 +50,7 @@ N.B. I tested using [PFS3 filesystem](https://en.wikipedia.org/wiki/Professional
 - Create a new partition of type `PFS\03` to span the rest of the drive with device name DH1 with MaxTransfer of `0x1FE00`, and Mask `0xFFFFFFFC`, Blocksize of 512.
 - Quick format this volume
 - Copy [NoClick](https://aminet.net/package/util/cdity/noclick20_usr) to WBStartup
-- Install WHDLoad to `C:`
+- Install [WHDLoad_usr_small](https://whdload.de) to `C:`
 - Copy [a608mcfg](http://wiki.archi-tech.com.pl/pl/A608mini) to `C:`
 - Copy Kickstarts to `DH0:Devs/`
 - QuitKey=$59 in `S:WHDLoad.prefs` (F10 to exit all games)
