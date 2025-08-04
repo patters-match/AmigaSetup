@@ -1,6 +1,5 @@
 # AmigaOS 3.2.3 install from CF card, on hardware
-
-This guide assumes you have purchased a CF/SD card PCMCIA kit which includes a bootable Workbench floppy with PCMCIA support.
+The following are my notes from setting up an Amiga A600 with a bootable internal CF card from scratch. This method only requires a working floppy drive, and assumes you have purchased a CF/SD card PCMCIA kit which includes a bootable Workbench floppy with PCMCIA support. Various eBay sellers offer these kits. No WinUAE emulator, and no CD-ROM drive required.
 
 #### With your system's original Kickstart ROM that can boot the PCMCIA floppy
 - Put [ADFBlitzer](https://aminet.net/package/disk/misc/adfblitzer) onto your PCMCIA CF card along with Install3.2.adf from the Amiga OS 3.2 CDROM.
