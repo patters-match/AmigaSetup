@@ -1,4 +1,4 @@
-# AmigaOS 3.2.3 install from CF card, on hardware
+# AmigaOS 3.2.3 bare install from PCMCIA SD/CF card
 This guide sets up an Amiga A600 with a bootable internal CF card from scratch. It's probably identical for an A1200, but these have a PCMCIA hardware bug that can prevent cards being reinitialised on reboot without [this fix](https://aminet.net/package/util/boot/CardReset).
 
 This method only requires a working floppy drive, and assumes you have purchased a CF/SD card PCMCIA kit which includes a bootable Workbench floppy with PCMCIA support. Various eBay sellers offer these kits. No WinUAE emulator, and no CD-ROM drive required.
