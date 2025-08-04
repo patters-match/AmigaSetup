@@ -5,7 +5,7 @@ AmigaOS 3.2 install on hardware
 This guide assumes you have purchased a CF/SD card PCMCIA kit which includes a bootable Workbench floppy with PCMCIA support.
 
 With your system’s original Kickstart ROM:
-- Put ADFBlitzer onto your PCMCIA CF card along with Install3.2.adf from the Amiga OS 3.2 CDROM.
+- Put [ADFBlitzer](https://aminet.net/package/disk/misc/adfblitzer) onto your PCMCIA CF card along with Install3.2.adf from the Amiga OS 3.2 CDROM.
 - Boot the PCMCIA floppy
 - Open the CF card and right-click -> Window -> Show -> All Files
 - Use ADFBlitzer to write Install3.2.adf to a floppy. Make two copies in case you get something wrong during this process, which will avoid you having to swap Kickstart ROMs once again.
