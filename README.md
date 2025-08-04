@@ -27,7 +27,7 @@ This guide assumes you have purchased a CF/SD card PCMCIA kit which includes a b
 - Open `HDTools/HDToolBox`. The internal CF card will be detected, but will present as 'Unknown'
 - Change drive type -> Define new -> Read configuration -> Continue
 - Save changes to the drive and reboot
-- Use HDToolBox to create a 512MB bootable Standard File System partition with device name DH0 with Fast File System, Directory Cache, MaxTransfer of 0x1FE00 and Mask 0xFFFFFFFC, Blocksize of 512. Be very sure to always hit Enter after each change to ensure it is recorded by the UI.
+- Use HDToolBox to create a 512MB bootable Standard File System partition with device name DH0 with Fast File System, Directory Cache, MaxTransfer of `0x1FE00` and Mask `0xFFFFFFFC`, Blocksize of 512. Be very sure to always hit Enter after each change to ensure it is recorded by the UI.
 - Quick format the new volume in Workbench
 - Open Shell
 - The installer expects a specific volume name which is not a valid FAT volume name, so we must make an assign (replace the second argument with the path to your installation files):   
