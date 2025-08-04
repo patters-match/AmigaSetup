@@ -35,7 +35,7 @@ This guide assumes you have purchased a CF/SD card PCMCIA kit which includes a b
 - Open `AmigaOS3.2CD:Install/Start Here`
 - Open your choice of installer from the Install drawer on the Install3.2 floppy. Select both English British and English languages, so there is a fallback if the British localisation is incomplete. Decline GlowIcons as they are far too slow on 68000.
 - Once AmigaOS 3.2 is installed, boot from DH0:
-- Add PCMCIA CompactFlash support to the installed Workbench, using the files from the install3.2 floppy:
+- Add PCMCIA CompactFlash support to the installed Workbench, using the files from the Install3.2 floppy:
     - Copy `DF0:Storage/DOSDrivers/CF0` to `DHO:Devs/DOSDrivers/`
     - Copy `DF0:Devs/compactflash.device` to `DHO:Devs/`
     - Copy `DF0:L/fat95` to `DH0:L/`
