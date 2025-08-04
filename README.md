@@ -2,7 +2,7 @@
 
 This guide assumes you have purchased a CF/SD card PCMCIA kit which includes a bootable Workbench floppy with PCMCIA support.
 
-#### With your system’s original Kickstart ROM
+#### With your system's original Kickstart ROM
 - Put [ADFBlitzer](https://aminet.net/package/disk/misc/adfblitzer) onto your PCMCIA CF card along with Install3.2.adf from the Amiga OS 3.2 CDROM.
 - Boot the PCMCIA floppy
 - Open the CF card and right-click -> Window -> Show -> All Files
