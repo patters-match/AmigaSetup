@@ -54,7 +54,7 @@ N.B. I tested using [PFS3 filesystem](https://en.wikipedia.org/wiki/Professional
   DOSType    = 0x4D534800
   ```
 - If necessary, run [a608mcfg](http://wiki.archi-tech.com.pl/pl/A608mini) to switch from 8MB Fast RAM to 4MB, to enable PCMCIA
-- Reboot
+- Reboot (cold boot if using an A1200).
 
 ## Update to AmigaOS 3.2.3
 - From the PCMCIA transfer SD/CF card, run the AmigaOS 3.2.3 Update by double-clicking to mount the file `ADFs/Update3.2.3.adf`
