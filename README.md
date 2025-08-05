@@ -3,7 +3,7 @@ This guide sets up an Amiga A600 from scratch with a bootable internal CF card a
 
 The described method only requires a working floppy drive, and assumes you have purchased a CF/SD card PCMCIA kit which includes a bootable Workbench floppy with PCMCIA support. Various eBay sellers offer these kits. No WinUAE emulator, and no CD-ROM drive required.
 
-## Make Install3.2 floppy
+## Prepare install media
 With your system's original Kickstart ROM that can boot the PCMCIA floppy...
 - Put [ADFBlitzer](https://aminet.net/package/disk/misc/adfblitzer) onto your PCMCIA transfer SD/CF card, along with Install3.2.adf from the Amiga OS 3.2 CDROM.
 - Boot the PCMCIA floppy
@@ -12,7 +12,7 @@ With your system's original Kickstart ROM that can boot the PCMCIA floppy...
 - On your modern computer, extract the entire AmigaOS3.2 ISO to your transfer SD/CF card
 - Register an account at [Hyperion Entertainment](https://www.hyperion-entertainment.com/) using your CD key, and download the 3.2.3 update. The prior updates are not needed. Extract and copy to the transfer SD/CF card.
 
-## Add PCMCIA storage support
+## Add PCMCIA storage support to Install3.2 floppy
 - Power off and physically install the new Kickstart 3.2.3 ROM
 - Boot the Install3.2 floppy
 - Open this disk and right-click -> Window -> Show -> All Files
