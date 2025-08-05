@@ -47,10 +47,12 @@ N.B. I tested using [PFS3 filesystem](https://en.wikipedia.org/wiki/Professional
     - Copy `DF0:Devs/compactflash.device` to `DHO:Devs/`
 - From a shell, run  
   `textedit Devs:DOSDrivers/CF0`
-- Replace  
-  `FileSystem = l:fat95`
-  with  
-  `FileSystem = L:CrossDOSFileSystem`
+- Make the following amendments:
+  ```
+  FileSystem = L:CrossDOSFileSystem
+  Buffers    = 256
+  DOSType    = 0x4D534800
+  ```
 - If necessary, run [a608mcfg](http://wiki.archi-tech.com.pl/pl/A608mini) to switch from 8MB Fast RAM to 4MB, to enable PCMCIA
 - Reboot
 - From the CF card, run the AmigaOS 3.2.3 Update by double-clicking to mount the file `ADFs/Update3.2.3.adf`
