@@ -48,7 +48,7 @@ Although the OS native CrossDOSFileSystem supports FAT32 and LFNs it seems very 
     - Copy `DF0:Devs/compactflash.device` to `DHO:Devs/`
     - Copy `DF0:L/fat95` to `DH0:L/`
 - If necessary, run [a608mcfg](http://wiki.archi-tech.com.pl/pl/A608mini) to switch from 8MB Fast RAM to 4MB, to enable PCMCIA
-- Reboot (cold boot if using an A1200).
+- Reboot (cold boot if using an A1200)
 
 ## Update to AmigaOS 3.2.3
 - From the PCMCIA transfer SD/CF card, run the AmigaOS 3.2.3 Update by double-clicking to mount the file `ADFs/Update3.2.3.adf`
@@ -57,7 +57,9 @@ Although the OS native CrossDOSFileSystem supports FAT32 and LFNs it seems very 
 ## Hard disk (internal CF card) data partition setup
 - Use `DH0:Tools/HDToolbox` to add a new partition type. Browse to the unpacked [pfs3aio filesystem driver](https://aminet.net/package/disk/misc/pfs3aio) file, which will copy it to the drive [RDB](https://en.wikipedia.org/wiki/Amiga_rigid_disk_block). Set the DOSType to `0x50465303`. Version is 19.2 which is derived from the driver file.
 - Create a new partition of type `PFS\03` to span the rest of the drive with device name DH1 with MaxTransfer of `0x1FE00`, and Mask `0xFFFFFFFC`, Blocksize of 512. This partition can be larger than 4GB.
-- Quick format this volume
+- Save the changes to the drive and exit to Workbench
+- Reboot
+- Quick format this volume from the Icon menu
 
 ## Additional customisation
 - Copy [NoClick](https://aminet.net/package/util/cdity/noclick20_usr) to `DH0:WBStartup`
