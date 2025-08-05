@@ -42,6 +42,7 @@ N.B. I tested using [PFS3 filesystem](https://en.wikipedia.org/wiki/Professional
 - Once AmigaOS 3.2 is installed, boot from DH0:
 
 ## Add PCMCIA storage support
+Although the OS native CrossDOSFileSystem supports FAT32 and LFNs it seems very RAM hungry, so we'll stick with fat95.
 - From the Install3.2 floppy:
     - Copy `DF0:Storage/DOSDrivers/CF0` to `DHO:Devs/DOSDrivers/`
     - Copy `DF0:Devs/compactflash.device` to `DHO:Devs/`
