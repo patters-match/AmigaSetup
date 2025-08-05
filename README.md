@@ -55,7 +55,9 @@ N.B. I tested using [PFS3 filesystem](https://en.wikipedia.org/wiki/Professional
   ```
 - If necessary, run [a608mcfg](http://wiki.archi-tech.com.pl/pl/A608mini) to switch from 8MB Fast RAM to 4MB, to enable PCMCIA
 - Reboot
-- From the CF card, run the AmigaOS 3.2.3 Update by double-clicking to mount the file `ADFs/Update3.2.3.adf`
+
+## Update to AmigaOS 3.2.3
+- From the PCMCIA transfer SD/CF card, run the AmigaOS 3.2.3 Update by double-clicking to mount the file `ADFs/Update3.2.3.adf`
 - Once that floppy image is mounted, launch the installer from the Install folder, ensuring to select the Expert User option. It seems to fail during a scripted file copy when Novice User is selected. Once again select both English British, and English as installed languages.
 - Use HDToolbox to add a new partition type. Browse to the unpacked [pfs3aio filesystem driver](https://aminet.net/package/disk/misc/pfs3aio) file, which will copy it to the drive [RDB](https://en.wikipedia.org/wiki/Amiga_rigid_disk_block). Set the DOSType to `0x50465303`. Version is 19.2 which is derived from the driver file.
 - Create a new partition of type `PFS\03` to span the rest of the drive with device name DH1 with MaxTransfer of `0x1FE00`, and Mask `0xFFFFFFFC`, Blocksize of 512.
