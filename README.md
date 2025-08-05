@@ -20,7 +20,7 @@ With your system's original Kickstart ROM that can boot the PCMCIA floppy...
 - Insert and open the working PCMCIA floppy and right-click -> Window -> Show -> All Files. Use the RAM disk as a intermediary to:
     - Copy `Devs/DOSDrivers/CF0` to `Storage/DOSDrivers` on the Install3.2 floppy
     - Copy `Devs/compactflash.device` to `Devs` on the Install3.2 floppy
-    - Copy `L/fat95` to `L` on the Install3.2 floppy
+    - Copy `L/fat95` to `L` on the Install3.2 floppy  
   Alternatively you can extract these files from the [CFD133](https://aminet.net/package/driver/media/CFD133) and [fat95](https://aminet.net/package/disk/misc/fat95) packages on Aminet.
 - Reboot from the Install3.2 floppy, with the PCMCIA transfer SD/CF card inserted. If you have an A1200, do a cold boot here to guarantee your PCMCIA card initialises.
 - Double-click on `Storage/DOSDrivers/CF0` to mount the transfer PCMCIA SD/CF card (it will not auto mount because `S:Startup-sequence` does not instruct this)
