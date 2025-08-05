@@ -41,14 +41,14 @@ N.B. I tested using [PFS3 filesystem](https://en.wikipedia.org/wiki/Professional
 - Open your choice of installer from the Install drawer on the Install3.2 floppy. Select both English British and English languages, so there is a fallback if the British localisation is incomplete. Decline GlowIcons as they are far too slow on 68000.
 - Once AmigaOS 3.2 is installed, boot from DH0:
 
-## Add PCMCIA CompactFlash / SD support
+## Add PCMCIA storage support
 - From the Install3.2 floppy:
     - Copy `DF0:Storage/DOSDrivers/CF0` to `DHO:Devs/DOSDrivers/`
     - Copy `DF0:Devs/compactflash.device` to `DHO:Devs/`
 - From a shell, run  
   `textedit Devs:DOSDrivers/CF0`
-- Replace
-  `Filesystem = l:fat95`
+- Replace  
+  `FileSystem = l:fat95`
   with  
   `FileSystem = L:CrossDOSFileSystem`
 - If necessary, run [a608mcfg](http://wiki.archi-tech.com.pl/pl/A608mini) to switch from 8MB Fast RAM to 4MB, to enable PCMCIA
