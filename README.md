@@ -45,14 +45,7 @@ N.B. I tested using [PFS3 filesystem](https://en.wikipedia.org/wiki/Professional
 - From the Install3.2 floppy:
     - Copy `DF0:Storage/DOSDrivers/CF0` to `DHO:Devs/DOSDrivers/`
     - Copy `DF0:Devs/compactflash.device` to `DHO:Devs/`
-- From a shell, run  
-  `textedit Devs:DOSDrivers/CF0`
-- Make the following amendments:
-  ```
-  FileSystem = L:CrossDOSFileSystem
-  Buffers    = 256
-  DOSType    = 0x4D534800
-  ```
+    - Copy `DF0:L/fat95` to `DH0:L/`
 - If necessary, run [a608mcfg](http://wiki.archi-tech.com.pl/pl/A608mini) to switch from 8MB Fast RAM to 4MB, to enable PCMCIA
 - Reboot (cold boot if using an A1200).
 
