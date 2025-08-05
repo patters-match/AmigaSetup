@@ -12,7 +12,7 @@ With your system's original Kickstart ROM that can boot the PCMCIA floppy...
 - On your modern computer, extract the entire AmigaOS3.2 ISO to your transfer SD/CF card
 - Register an account at [Hyperion Entertainment](https://www.hyperion-entertainment.com/) using your CD key, and download the 3.2.3 update. The prior updates are not needed. Extract and copy to the transfer SD/CF card.
 
-## Add PCMCIA storage support to Install3.2 floppy
+## Add PCMCIA storage support to Install3.2 boot floppy
 - Power off and physically install the new Kickstart 3.2.3 ROM
 - Boot the Install3.2 floppy
 - Open this disk and right-click -> Window -> Show -> All Files
