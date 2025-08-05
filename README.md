@@ -66,7 +66,7 @@ N.B. I tested using [PFS3 filesystem](https://en.wikipedia.org/wiki/Professional
 - Quick format this volume
 
 ## Additional customisation
-- Copy [NoClick](https://aminet.net/package/util/cdity/noclick20_usr) to WBStartup
+- Copy [NoClick](https://aminet.net/package/util/cdity/noclick20_usr) to `DH0:WBStartup`
 - Install [WHDLoad_usr_small](https://whdload.de) to `C:`
 - Copy [a608mcfg](http://wiki.archi-tech.com.pl/pl/A608mini) to `C:`
 - Copy Kickstarts to `DH0:Devs/`
