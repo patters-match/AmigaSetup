@@ -17,7 +17,7 @@ With your system's original Kickstart ROM that can boot the PCMCIA floppy...
 - Boot the Install3.2 floppy
 - Open this disk and right-click -> Window -> Show -> All Files
 - Now delete `ActivateCDROM`, `L/CDFileSystem`, and `Storage/DOSDrivers/CD0`
-- Insert and open the working PCMCIA floppy and right-click -> Window -> Show -> All Files. Use the RAM disk as a intermediary to:
+- Insert and open the working PCMCIA floppy and right-click -> Window -> Show -> All Files. Use the RAM disk as an intermediary to:
     - Copy `Devs/DOSDrivers/CF0` to `Storage/DOSDrivers` on the Install3.2 floppy
     - Copy `Devs/compactflash.device` to `Devs` on the Install3.2 floppy
     - Copy `L/fat95` to `L` on the Install3.2 floppy  
