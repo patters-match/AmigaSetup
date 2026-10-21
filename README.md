@@ -18,9 +18,9 @@ With your system's original Kickstart ROM that can boot the PCMCIA floppy...
 - Open this disk and right-click -> Window -> Show -> All Files
 - Now delete `ActivateCDROM`, `L/CDFileSystem`, and `Storage/DOSDrivers/CD0`
 - Insert and open the working PCMCIA floppy and right-click -> Window -> Show -> All Files. Use the RAM disk as an intermediary to:
-    - Copy `Devs/DOSDrivers/CF0` to `Storage/DOSDrivers` on the Install3.2 floppy
-    - Copy `Devs/compactflash.device` to `Devs` on the Install3.2 floppy
-    - Copy `L/fat95` to `L` on the Install3.2 floppy  
+    - Copy `Devs/DOSDrivers/CF0` to `Storage/DOSDrivers/` on the Install3.2 floppy
+    - Copy `Devs/compactflash.device` to `Devs/` on the Install3.2 floppy
+    - Copy `L/fat95` to `L/` on the Install3.2 floppy  
 - Reboot from the Install3.2 floppy, with the PCMCIA transfer SD/CF card inserted. If you have an A1200, do a cold boot here to guarantee that your PCMCIA card initialises.
 - Double-click on `Storage/DOSDrivers/CF0` to mount the transfer PCMCIA SD/CF card (it will not auto mount because `S:Startup-sequence` does not instruct this)
 - Now you have a bridge to get files to your Amiga using KickStart 3.2.3
