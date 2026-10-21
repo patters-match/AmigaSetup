@@ -66,5 +66,5 @@ Although the OS native CrossDOSFileSystem supports FAT32 and LFNs it seems very 
 - Install [WHDLoad_usr_small](https://whdload.de) to `C:`
 - Copy [a608mcfg](http://wiki.archi-tech.com.pl/pl/A608mini) to `C:`
 - Copy Kickstarts to `DH0:Devs/`
-- QuitKey=$59 in `S:WHDLoad.prefs` (F10 to exit all games)
+- QuitKey=$59 in `S:WHDLoad.prefs` (F10 to exit all games, since A600 has no PrtScrn key)
 - In Prefs, set Locale, set Overscan, in Input set keyboard layout, in IControl set windows 'can move off-screen'
